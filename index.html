@@ -130,7 +130,7 @@
         </i></p>
     <div class="myform">
         <br><br>
-        <form id="survey-form">
+        <form id="survey-form" method="POST" action="https://formspree.io/f/xwkagyrk">
            <label for="name" id="name-label">Homeowners Name</label>
             <input type="text" name="name" id="name" placeholder="Homeowners name (John Doe)" required>
             <label for=" address" id="address-label">Homeowners Address</label>
@@ -159,49 +159,49 @@
 
             <label for="How many years have you owned the home?" id="question">How many years have you owned the home?</label>
             <div class="rate">
-                <input type="radio" name="year" checked>
-                <label for=" less than a year"> less than a year</label>
+                <input type="radio" name="year" value="less than a year" checked>
+                <label for=" less than a year">less than a year</label>
             </div>
             <br>
             <div class="rate">
-                <input type="radio" name="year">
+                <input type="radio" name="year" value="1 year">
                 <label for="1 year">1 year</label>
             </div>
             <br>
             <div class="rate">
-                <input type="radio" name="year">
+                <input type="radio" name="year" value="2 years">
                 <label for="2 years">2 years</label>
             </div>
             <br>
             <div class="rate">
-                <input type="radio" name="year">
+                <input type="radio" name="year" value="3 years">
                 <label for="3 years">3 years</label>
             </div>
             <br>
             <div class="rate">
-                <input type="radio" name="year">
+                <input type="radio" name="year" value="4 years">
                 <label for="4 years">4 years</label>
             </div>
             <br>
             <div class="rate">
-                <input type="radio" name="year">
+                <input type="radio" name="year" value="5 years">
                 <label for="5 years">5 years</label>
             </div>
             <br>
             <div class="rate">
-                <input type="radio" name="year">
+                <input type="radio" name="year" value="6 or more">
                 <label for="6 or more">6 or more</label>
             </div>
 
 
             <label for="Do you have any mortgage on the property?" id="question">Do you have any mortgage on the property?</label>
             <div class="rate">
-                <input type="radio" name="mortgage" checked>
+                <input type="radio" name="mortgage" value="Yes" checked>
                 <label for=" Yes">Yes</label>
             </div>
             <br>
             <div class="rate">
-                <input type="radio" name="mortgage">
+                <input type="radio" name="mortgage" value="No">
                 <label for="No">No</label>
             </div>
 
