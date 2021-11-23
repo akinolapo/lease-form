@@ -28,11 +28,13 @@ async function validateFormData () {
             }
         }
     }
+    
     return true
 }
 
+
 formElement.addEventListener('submit', async (ev) => {
-//     ev.preventDefault()
+//    ev.preventDefault()
     try {
         await validateFormData()
     } catch (error) {
@@ -50,6 +52,11 @@ propertySelectBoxes.forEach((propertySelectBox, index) => {
     const value = ev.target.value
     if (value.toLowerCase() === "other") otherContainers[index].style.display = "block"
     else otherContainers[index].style.display = "none   "
-})  
+    
+    if (value != "Single family home"){
+        formElement.action = formElement.action + "?prop=" + value
+//        console.log(value)
+    }
+  
+  })  
 })
-
