@@ -53,7 +53,7 @@ propertySelectBoxes.forEach((propertySelectBox, index) => {
         if (value.toLowerCase() === "other") otherContainers[index].style.display = "block"
         else otherContainers[index].style.display = "none   "
 
-        formElement.action = formElement.action + "?prop=" + value
+//         formElement.action = formElement.action + "?prop=" + value
 
 
     })
